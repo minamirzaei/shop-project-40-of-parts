@@ -1,0 +1,30 @@
+{% extends "admin/layout.html.twig" %}
+
+{% block content %}
+
+    <table border="1" id="t01">
+        <tr>
+
+
+        </tr>
+
+
+        <tr>
+        <form action="" method="post" enctype="multipart/form-data">
+            <tr> <td> name: <input type="text" name="name"><br><br></td> </tr>
+
+            <tr><td> <input type="file" name="image"></td></tr>
+
+            <td> <input type="submit" value="save"></td>
+            <tr>
+                <td>
+                    <?php
+                    echo $msg;
+                    ?>
+                </td>
+            </tr>
+
+        </form>
+    </tr>
+</table>
+{% endblock %}

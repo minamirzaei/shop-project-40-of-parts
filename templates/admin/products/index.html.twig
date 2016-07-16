@@ -1,0 +1,30 @@
+{% extends "admin/layout.html.twig" %}
+
+{% block content %}
+    
+
+    <table style="width:40%" border="1">
+        <tr>
+            <th>#</th>
+            <th>کد</th>
+            <th>نام</th>
+            <th>توضیح</th> 
+            <th>قیمت</th>
+            <th>تعداد</th>
+            <th>وضعیت</th>
+        </tr>
+
+        {% for p in products %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td> {{p.sku}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.description}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.quantity}}</td>
+                <td>{{p.status}}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+{% endblock %}
