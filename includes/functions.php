@@ -56,3 +56,11 @@ function getFlashMessages() {
     $_SESSION['flash-messages'] = [];
     return $messages;
 }
+
+function isPost() {
+    return ($_SERVER['REQUEST_METHOD'] == "POST");
+}
+
+function getPostData($name) {
+    return escapeString($_POST[$name]);
+}

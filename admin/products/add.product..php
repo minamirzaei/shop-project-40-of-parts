@@ -31,4 +31,4 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 //        redirect("profile.php?id=$id");
     }
 }
-echo $twig->render('admin/products/add.product.image.html.twig', array());
+echo $twig->render('admin/products/add.product.html.twig', array());

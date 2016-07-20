@@ -1,74 +1,35 @@
-
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
     <head>
-        <title>shop_project</title>
-        <link href="{{path}}/templates/css/them/style.css" rel="stylesheet" type="text/css"/>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Online shopping for men and women">
-        <meta name="keywords" content="Shoes, Perfume, Jewlery , زیور الات , لباس , کفش, gfhs ">
-        <meta name="author" content="Dibagaran Group">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+        <title>Login</title>
+
+        <link href="{{path}}/templates/user/login-box.css" rel="stylesheet" type="text/css" />
     </head>
+
     <body>
 
-        <div id="main">
-            <div id="topmenu">
-                <div id="search">
-                    <form>
-                        <input type="text" class="txt" placeholder="Search">
-                        <input type="submit" value=" " class="btn-search">
-                    </form>
-                </div>
-                <div id="menu">
-                    <ul>
-                        <li><a href="">صفحه اصلی</a></li>
-                        <li><a href="">محصولات</a></li>
-                        <li><a href="">تماس با ما</a></li>
-                        <li><a href="">درباره ما</a></li>
-                    </ul>
-                </div>
-            </div>
 
-            <div id="block">
+        <div style="padding: 100px 0 0 250px;">
+
+
+            <div id="login-box">
+
                 {% block content %}
 
                 {% endblock  %}
 
-            </div>
-
-            <div id="contact">
-                <div>
-                    <h2>تماس با ما</h2>
-                    <p>آدرس: شیراز خیابان زرگری</p>
-                    <p>تلفن: 071361674986</p>
-                    <p>تلفن: 071496456</p>
-                    <p>دورنگار: 071361674986</p>
-                    <img src="images/fb.png" alt="facebook">
-                    <img src="images/tw.png" alt="twitter">
-                    <img src="images/gp.png" alt="gplus">
-                </div>
 
 
-                 <form>
-                    <input type="email" class="txt-contact" placeholder="ایمیل" ><br>
-                    <input type="password" class="txt-contact" placeholder="رمز" > <br>
-                   
-                    <input type="submit" value="ورود" class="btn-contact">
-                </form>
+
+
+
 
             </div>
-          <div id="footer"><p> پروژه نهایی</p></div>
 
         </div>
 
-
-
     </body>
 </html>
-

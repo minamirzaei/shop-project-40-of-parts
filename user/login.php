@@ -1,6 +1,6 @@
 <?php
 
-require './includes/init.php';
+require '../includes/init.php';
 
 
 $msg = "";
@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $password = escapeString($_POST['password']);
 
     if ($login->doLogin($email, $password)) {
-        redirect("index.php");
+        redirect("register.php");
     } else {
         $msg = "Invalid Username or password";
     }
@@ -20,4 +20,4 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 
-echo $twig->render('login.html.twig', array("message" => $msg));
+echo $twig->render('user/login.html.twig', array("message" => $msg));
