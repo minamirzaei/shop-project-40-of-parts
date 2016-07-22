@@ -2,40 +2,57 @@
 
 {% block content %}
 
+    <div>{{product.name}}</div>
+
+    <h1> افزودن محصول</h1>
     <form action="" method="post">
-        <label>
-            SKU:
-            <input type="text" name="sku">
-        </label><br>
-        <label>
-            نام محصول:
-            <input type="text" name="name">
-        </label><br>
-        
-        <label>
-            دسته:
-            <select name="categories[]" multiple="">
-                {% for c in categories %}
-                    <option value="{{c.id}}">{{c.name}}</option>
 
-                {% endfor%}
-            </select>
-        </label><br>
-        <label>
-            قیمت:
-            <input type="text" name="price">
-        </label><br>
-        <label>
-            تعداد:
-            <input type="text" name="quantity">
-        </label><br>
-        <label>
-            توضیحات:
-            <input type="text" name="description">
-        </label><br><br>
-        <input type="submit" value="ذخیره" >
+        {#کد محصول <br />#}
+        <input type="text" name="sku"  class="form-create"  size="30" maxlength="2048" placeholder="کد محصول"/>
+        <br />
+        <br />
+        <input type="text" name="name"  class="form-create"  size="30" maxlength="2048" placeholder=" نام محصول" />
+        <br />
+        <br />
+        <input name="price" type="text"  class="form-create"  size="30" maxlength="2048" placeholder="قیمت" />
+        <br />
+        <br />
+        <input name="quantity" type="text"  class="form-create"  size="30" maxlength="2048" placeholder="تعداد " />
+        <br />
+        <br />
+        <input type="text" name="description"  class="form-create" size="30" maxlength="2048" placeholder="توضیحات" />
+        {# <div id="product-box-name">وضعیت</div><div id="login-box-field"><input type="text" name="status" class="form-login"  size="30" maxlength="2048" /></div>#}
+        <br />
+        <br />
 
-    </form>
+
+        دسته<br />
+        <select name="categories[]" multiple=""  class="form-create"  /> 
+
+        {% for c in categories %}
+            <option value="{{c.id}}">{{c.name}}</option>
+
+        {% endfor%}
+
+    </select>
+    <br />
+    <br />
+
+
+    {# <table border="3" id="table-product" >
+    
+    
+    
+         <form action="" method="post" enctype="multipart/form-data">
+             <tr> <td> نام عکس: <input type="text" name="name"><br><br></td> </tr>
+    
+             <tr><td> <input type="file" name="image"></td></tr>
+         </form>
+     </table>#}
+    <input type="submit"  value="ثبت"  class="btn-form-create"  size="10"  />
+
+
+</form>
 
 
 {% endblock %}

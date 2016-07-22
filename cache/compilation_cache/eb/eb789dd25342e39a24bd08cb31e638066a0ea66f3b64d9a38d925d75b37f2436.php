@@ -1,7 +1,7 @@
 <?php
 
-/* layout.html.twig */
-class __TwigTemplate_96c8fba5790088a1daac5b903df2d736dfd9dda9af68ff67896862842b5ddbcd extends Twig_Template
+/* user/layout.html.twig */
+class __TwigTemplate_6087f3a8b1fa4c606ad8985e06d9e0c655470092dc640e622a15272a7398f3d8 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -26,30 +26,36 @@ class __TwigTemplate_96c8fba5790088a1daac5b903df2d736dfd9dda9af68ff67896862842b5
         <link href=\"";
         // line 7
         echo twig_escape_filter($this->env, (isset($context["path"]) ? $context["path"] : null), "html", null, true);
-        echo "/templates/user/login-box.css\" rel=\"stylesheet\" type=\"text/css\" />
+        echo "/templates/user/box33.css\" rel=\"stylesheet\" type=\"text/css\" />
         <title>Login Box HTML Code - www.onescript.ir</title>
 
     </head>
 
     <body>
-        <div id=\"main\">
-            <div id=\"top-menu\">
-            </div>
-            <div id=\"navigation\">
+        ";
+        // line 16
+        echo "        <div id=\"navigation\">
 
-                <ul>
-                    <li><a href=\"#\"> کالای دیجیتال </a></li>
-                    <li><a href=\"#\"> لولزم خانگی </a></li>
-                    <li><a href=\"#\"> زیبایی و سلامت </a></li>
-                    <li><a href=\"#\">فرهنگ و هنر </a></li>
-                    <li><a href=\"#\"> ورزش و سرگرمی </a></li>
-                    <li><a href=\"#\"> مادر و کودک </a></li>
-
-                </ul>
-            </div>
-
+            <ul>
+                ";
+        // line 20
+        echo "                <li><a href=\"";
+        echo twig_escape_filter($this->env, (isset($context["path"]) ? $context["path"] : null), "html", null, true);
+        echo "/user/login.php\"> ورود به سیستم</a></li>
+                <li><a href=\"";
+        // line 21
+        echo twig_escape_filter($this->env, (isset($context["path"]) ? $context["path"] : null), "html", null, true);
+        echo "/user/register.php\"> ثبت نام </a></li>
+                <li><a href=\"#\">تماس با ما</a></li>
+                    ";
+        // line 25
+        echo "
+            </ul>
         </div>
 
+        ";
+        // line 30
+        echo "
 
         <div style=\"padding: 100px 0 0 250px;\">
 
@@ -88,7 +94,7 @@ class __TwigTemplate_96c8fba5790088a1daac5b903df2d736dfd9dda9af68ff67896862842b5
 
     public function getTemplateName()
     {
-        return "layout.html.twig";
+        return "user/layout.html.twig";
     }
 
     public function isTraitable()
@@ -98,7 +104,7 @@ class __TwigTemplate_96c8fba5790088a1daac5b903df2d736dfd9dda9af68ff67896862842b5
 
     public function getDebugInfo()
     {
-        return array (  85 => 38,  82 => 37,  63 => 40,  61 => 37,  28 => 7,  20 => 1,);
+        return array (  91 => 38,  88 => 37,  69 => 40,  67 => 37,  58 => 30,  52 => 25,  47 => 21,  42 => 20,  37 => 16,  28 => 7,  20 => 1,);
     }
 }
 /* */
@@ -107,29 +113,29 @@ class __TwigTemplate_96c8fba5790088a1daac5b903df2d736dfd9dda9af68ff67896862842b5
 /*     <head>*/
 /*         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />*/
 /* */
-/*         <link href="{{path}}/templates/user/login-box.css" rel="stylesheet" type="text/css" />*/
+/*         <link href="{{path}}/templates/user/box33.css" rel="stylesheet" type="text/css" />*/
 /*         <title>Login Box HTML Code - www.onescript.ir</title>*/
 /* */
 /*     </head>*/
 /* */
 /*     <body>*/
-/*         <div id="main">*/
-/*             <div id="top-menu">*/
-/*             </div>*/
-/*             <div id="navigation">*/
+/*         {# <div id="main">*/
+/*              <div id="top-menu">*/
+/*              </div>#}*/
+/*         <div id="navigation">*/
 /* */
-/*                 <ul>*/
-/*                     <li><a href="#"> کالای دیجیتال </a></li>*/
-/*                     <li><a href="#"> لولزم خانگی </a></li>*/
-/*                     <li><a href="#"> زیبایی و سلامت </a></li>*/
-/*                     <li><a href="#">فرهنگ و هنر </a></li>*/
-/*                     <li><a href="#"> ورزش و سرگرمی </a></li>*/
-/*                     <li><a href="#"> مادر و کودک </a></li>*/
+/*             <ul>*/
+/*                 {#<li><a href="#"> محصولات </a></li>#}*/
+/*                 <li><a href="{{path}}/user/login.php"> ورود به سیستم</a></li>*/
+/*                 <li><a href="{{path}}/user/register.php"> ثبت نام </a></li>*/
+/*                 <li><a href="#">تماس با ما</a></li>*/
+/*                     {# <li><a href="#"> ورزش و سرگرمی </a></li>*/
+/*                      <li><a href="#"> مادر و کودک </a></li>#}*/
 /* */
-/*                 </ul>*/
-/*             </div>*/
-/* */
+/*             </ul>*/
 /*         </div>*/
+/* */
+/*         {#</div>#}*/
 /* */
 /* */
 /*         <div style="padding: 100px 0 0 250px;">*/

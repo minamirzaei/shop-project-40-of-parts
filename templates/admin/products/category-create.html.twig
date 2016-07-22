@@ -1,0 +1,18 @@
+{% extends "admin/layout.html.twig" %}
+
+{% block content %}
+
+    <form action="" method="post">
+        {{parentName}}<br>
+        <br />
+        <br />
+        <input type="text" name="name" class="form-create"  size="30" maxlength="2048" placeholder="نام دسته" />
+        <br />
+        <br />
+        <input type="submit"  value="ثبت"  class="btn-form-create"  size="10"  />
+
+
+    </form>
+
+
+{% endblock %}

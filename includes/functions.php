@@ -64,3 +64,7 @@ function isPost() {
 function getPostData($name) {
     return escapeString($_POST[$name]);
 }
+
+function getNumParam($name) {
+    return (int) (isset($_GET[$name]) ? $_GET[$name] : 0);
+}

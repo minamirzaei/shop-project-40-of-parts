@@ -1,0 +1,27 @@
+{% extends "admin/layout.html.twig" %}
+
+{% block content %}
+   
+    <hr>
+    <h2>{{parentName}}</h2>
+    <hr>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+        </tr>
+        {% for c in categories %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td><a href="?parent_id={{c.id}}">{{c.name}}</a></td>
+            </tr>
+
+
+        {%  else %}
+            <tr>
+                <td colspan="2">هیچ زیر دسته ای وجود ندارد</td>
+            </tr>
+        {% endfor %}
+    </table>
+   
+{% endblock %}

@@ -1,23 +1,42 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+        <link href="{{path}}/templates/user/box33.css" rel="stylesheet" type="text/css" />
+        <title>Login Box HTML Code - www.onescript.ir</title>
 
-        <title>Login</title>
-
-        <link href="{{path}}/templates/user/login-box.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
+        {# <div id="main">
+             <div id="top-menu">
+             </div>#}
+        <div id="navigation">
+
+            <ul>
+                <li><a href="{{path}}/admin/index.php"> محصولات </a></li>
+                <li><a href="#"> ورود به سیستم</a></li>
+                <li><a href="#"> ثبت نام </a></li>
+                <li><a href="#">تماس با ما</a></li>
+                    {# <li><a href="#"> ورزش و سرگرمی </a></li>
+                     <li><a href="#"> مادر و کودک </a></li>#}
+
+            </ul>
+        </div>
+
+        {#</div>#}
 
 
         <div style="padding: 100px 0 0 250px;">
+            <div id="box-product">
+                <a href="{{path}}/admin/products/index.php">محصولات</a>
+                <a href="{{path}}/admin/products/category-create.php?parent_id={{parent_id}}">افزودن دسته</a>
+                <a href="{{path}}/admin/products/category-list.php">لیست دسته ها</a>
+                <a href="{{path}}/admin/products/create.php">افزودن محصول</a>
 
 
-            <div id="login-box">
 
                 {% block content %}
 
@@ -25,13 +44,15 @@
 
 
 
-
-
-
-
             </div>
 
+
+
+
+
         </div>
+
+
 
     </body>
 </html>

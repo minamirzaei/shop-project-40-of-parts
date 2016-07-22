@@ -1,4 +1,4 @@
-{% extends "layout.html.twig" %}
+{% extends "user/layout.html.twig" %}
 
 {% block content %}
     {#  <H2>ثبت نام</H2>
@@ -19,13 +19,13 @@
     <form action="" method="post">
         <br />
         <br />
-        <div id="login-box-name" style="margin-top:20px;">نام</div><div id="login-box-field" style="margin-top:20px;"><input  name="firstname" type="text" class="form-login"  size="30" maxlength="2048" /></div>
-        <div id="login-box-name">نام خانوادگی</div><div id="login-box-field"><input name="lastname" type="text" class="form-login"  size="30" maxlength="2048" /></div>
-        <div id="login-box-name">ایمیل</div><div id="login-box-field"><input name="email" type="text" class="form-login"  size="30" maxlength="2048" /></div>
-        <div id="login-box-name">رمز </div><div id="login-box-field"><input name="password" type="password" class="form-login"  size="30" maxlength="2048" /></div>
+        <div id="login-box-name" style="margin-top:20px;"></div><div id="login-box-field" style="margin-top:20px;"><input  name="firstname" type="text" class="form-login"  size="30" maxlength="2048" placeholder="نام" /></div>
+        <div id="login-box-name"></div><div id="login-box-field"><input name="lastname" type="text" class="form-login"  size="30" maxlength="2048" placeholder="نام خانوادگی"/></div>
+        <div id="login-box-name"></div><div id="login-box-field"><input name="email" type="text" class="form-login"  size="30" maxlength="2048" placeholder="ایمیل" /></div>
+        <div id="login-box-name"></div><div id="login-box-field"><input name="password" type="password" class="form-login"  size="30" maxlength="2048" placeholder="رمز" /></div>
 
         <br />
-        <input type="submit"  value="ورود">  
+        <input type="submit"  value="ورود"  class="btn-form-create"  size="10"  /> 
 
     </form>
 {% endblock %}

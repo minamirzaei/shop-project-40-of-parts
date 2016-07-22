@@ -8,7 +8,7 @@ class __TwigTemplate_670da882a125380aa51b69cc049aab7f0f55e957d730854ef3ff1a299ea
         parent::__construct($env);
 
         // line 2
-        $this->parent = $this->loadTemplate("layout.html.twig", "user/login.html.twig", 2);
+        $this->parent = $this->loadTemplate("user/layout.html.twig", "user/login.html.twig", 2);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -16,7 +16,7 @@ class __TwigTemplate_670da882a125380aa51b69cc049aab7f0f55e957d730854ef3ff1a299ea
 
     protected function doGetParent(array $context)
     {
-        return "layout.html.twig";
+        return "user/layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -43,13 +43,13 @@ class __TwigTemplate_670da882a125380aa51b69cc049aab7f0f55e957d730854ef3ff1a299ea
     <form action=\"\" method=\"post\">
         <br />
         <br />
-        <div id=\"login-box-name\" style=\"margin-top:20px;\">ایمیل</div><div id=\"login-box-field\" style=\"margin-top:20px;\"><input name=\"email\" type=\"text\" class=\"form-login\"  size=\"30\" maxlength=\"2048\" /></div>
-        <div id=\"login-box-name\">رمز ورود</div><div id=\"login-box-field\"><input name=\"password\" type=\"password\" class=\"form-login\"  size=\"30\" maxlength=\"2048\" /></div>
+        <div id=\"login-box-name\" style=\"margin-top:20px;\"></div><div id=\"login-box-field\" style=\"margin-top:20px;\"><input name=\"email\" type=\"text\" class=\"form-login\"  size=\"30\" maxlength=\"2048\" placeholder=\"ایمیل\"/></div>
+        <div id=\"login-box-name\"></div><div id=\"login-box-field\"><input name=\"password\" type=\"password\" class=\"form-login\"  size=\"30\" maxlength=\"2048\"  placeholder=\"رمز ورود\"/></div>
         <br />
         <span class=\"login-box-options\"><input type=\"checkbox\" name=\"rememberMe\" value=\"1\"> مرا به خاطر بسپار </span>
         <br />
         <br />
-        <input type=\"submit\"  value=\"ورود\">  
+        <input type=\"submit\"  value=\"ورود\"  class=\"btn-form-create\"  size=\"10\"  /> 
 
     </form>
 ";
@@ -71,7 +71,7 @@ class __TwigTemplate_670da882a125380aa51b69cc049aab7f0f55e957d730854ef3ff1a299ea
     }
 }
 /* */
-/* {% extends "layout.html.twig" %}*/
+/* {% extends "user/layout.html.twig" %}*/
 /* */
 /* {% block content %}*/
 /*     {% if message is not empty %}*/
@@ -86,13 +86,13 @@ class __TwigTemplate_670da882a125380aa51b69cc049aab7f0f55e957d730854ef3ff1a299ea
 /*     <form action="" method="post">*/
 /*         <br />*/
 /*         <br />*/
-/*         <div id="login-box-name" style="margin-top:20px;">ایمیل</div><div id="login-box-field" style="margin-top:20px;"><input name="email" type="text" class="form-login"  size="30" maxlength="2048" /></div>*/
-/*         <div id="login-box-name">رمز ورود</div><div id="login-box-field"><input name="password" type="password" class="form-login"  size="30" maxlength="2048" /></div>*/
+/*         <div id="login-box-name" style="margin-top:20px;"></div><div id="login-box-field" style="margin-top:20px;"><input name="email" type="text" class="form-login"  size="30" maxlength="2048" placeholder="ایمیل"/></div>*/
+/*         <div id="login-box-name"></div><div id="login-box-field"><input name="password" type="password" class="form-login"  size="30" maxlength="2048"  placeholder="رمز ورود"/></div>*/
 /*         <br />*/
 /*         <span class="login-box-options"><input type="checkbox" name="rememberMe" value="1"> مرا به خاطر بسپار </span>*/
 /*         <br />*/
 /*         <br />*/
-/*         <input type="submit"  value="ورود">  */
+/*         <input type="submit"  value="ورود"  class="btn-form-create"  size="10"  /> */
 /* */
 /*     </form>*/
 /* {% endblock %}*/

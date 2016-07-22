@@ -1,0 +1,31 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+
+
+    <h2 dir="rtl">دسته بندی محصولات</h2>
+    <div class="prd-catgory">
+        <img src="{{path}}/templates/images/products/clothes01.jpg" alt="clothes" >
+        <p><a href="{{path}}/manage-products/pooshak.php">پوشاک</a></p>
+    </div>
+    <div class="prd-catgory">
+        <img src="{{path}}/templates/images/products/jewelry01.jpg" alt="jewelry" >
+        <p><a href="#">زیور آلات</a></p>
+    </div>
+    <div class="prd-catgory">
+        <img src="{{path}}/templates/images/products/shoes01.jpg" alt="shoes" >
+        <p><a href="{{path}}/manage-products/shose.php">کفش</a></p>
+    </div>
+    <div class="prd-catgory">
+        <img src="{{path}}/templates/images/products/perfume0.jpg" alt="perfume" >
+        <p><a href="{{path}}/manage-products/perfume.php">عطر و ادکلن</a></p>
+    </div>
+    <div class="prd-catgory">
+        <img src="{{path}}/templates/images/products/toy01.jpg" alt="toy" >
+        <p><a href="{{path}}/manage-products/toy.php">اسباب بازی</a></p>
+    </div>
+    <div class="prd-catgory">
+        <img src="{{path}}/templates/images/products/watch01.jpg" alt="watch" >
+        <p><a href="watch.html">ساعت</a></p>
+
+    {% endblock %}

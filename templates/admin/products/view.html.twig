@@ -1,0 +1,27 @@
+{% extends "admin/layout.html.twig" %}
+
+
+{% block content %}
+
+    <div>{{product.name}}</div>
+
+    <div>{{product.name}}</div>
+    {% if product.categories|length >0 %}
+        <div>
+            <table border="1">
+
+                {% for c in product.categories %}
+                    <li>{{c.name}}</li>
+                    {% endfor %}
+
+            </table>
+        </div>
+    {% else %}
+        دسته ای انتخاب نشده
+    {% endif %}
+    <div>{{product.description}}</div>
+    <div>{{product.price}}</div>
+    <div>{{product.quantity}}</div>
+    <div>{{product.status}}</div>
+
+{% endblock %}
