@@ -28,12 +28,13 @@ class __TwigTemplate_caf700ca70ce586c47fffcb3e9e44340b5e52b306b3371585c19438333e
     public function block_content($context, array $blocks = array())
     {
         // line 4
-        echo "   
+        echo "
     <hr>
-    <h2>";
+    <h2>از دسته :";
         // line 6
         echo twig_escape_filter($this->env, (isset($context["parentName"]) ? $context["parentName"] : null), "html", null, true);
         echo "</h2>
+
     <hr>
     <table>
         <tr>
@@ -41,7 +42,7 @@ class __TwigTemplate_caf700ca70ce586c47fffcb3e9e44340b5e52b306b3371585c19438333e
             <th>Name</th>
         </tr>
         ";
-        // line 13
+        // line 14
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["categories"]) ? $context["categories"] : null));
         $context['_iterated'] = false;
@@ -59,14 +60,14 @@ class __TwigTemplate_caf700ca70ce586c47fffcb3e9e44340b5e52b306b3371585c19438333e
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["c"]) {
-            // line 14
+            // line 15
             echo "            <tr>
                 <td>";
-            // line 15
+            // line 16
             echo twig_escape_filter($this->env, $this->getAttribute($context["loop"], "index", array()), "html", null, true);
             echo "</td>
                 <td><a href=\"?parent_id=";
-            // line 16
+            // line 17
             echo twig_escape_filter($this->env, $this->getAttribute($context["c"], "id", array()), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["c"], "name", array()), "html", null, true);
@@ -86,7 +87,7 @@ class __TwigTemplate_caf700ca70ce586c47fffcb3e9e44340b5e52b306b3371585c19438333e
             }
         }
         if (!$context['_iterated']) {
-            // line 21
+            // line 22
             echo "            <tr>
                 <td colspan=\"2\">هیچ زیر دسته ای وجود ندارد</td>
             </tr>
@@ -95,9 +96,9 @@ class __TwigTemplate_caf700ca70ce586c47fffcb3e9e44340b5e52b306b3371585c19438333e
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['c'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 25
+        // line 26
         echo "    </table>
-   
+
 ";
     }
 
@@ -113,15 +114,16 @@ class __TwigTemplate_caf700ca70ce586c47fffcb3e9e44340b5e52b306b3371585c19438333e
 
     public function getDebugInfo()
     {
-        return array (  99 => 25,  90 => 21,  70 => 16,  66 => 15,  63 => 14,  45 => 13,  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  100 => 26,  91 => 22,  71 => 17,  67 => 16,  64 => 15,  46 => 14,  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
     }
 }
 /* {% extends "admin/layout.html.twig" %}*/
 /* */
 /* {% block content %}*/
-/*    */
+/* */
 /*     <hr>*/
-/*     <h2>{{parentName}}</h2>*/
+/*     <h2>از دسته :{{parentName}}</h2>*/
+/* */
 /*     <hr>*/
 /*     <table>*/
 /*         <tr>*/
@@ -141,5 +143,5 @@ class __TwigTemplate_caf700ca70ce586c47fffcb3e9e44340b5e52b306b3371585c19438333e
 /*             </tr>*/
 /*         {% endfor %}*/
 /*     </table>*/
-/*    */
+/* */
 /* {% endblock %}*/

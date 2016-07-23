@@ -45,7 +45,7 @@ class ProductCategory {
             $cats2[] = $c;
             if (count($subcats) > 0) {
                 foreach ($subcats as $cc) {
-                    $cc['name'] = "---- " . $cc['name'];
+                    $cc['name'] = "***** " . $cc['name'];
                     $cats2[] = $cc;
                 }
             }

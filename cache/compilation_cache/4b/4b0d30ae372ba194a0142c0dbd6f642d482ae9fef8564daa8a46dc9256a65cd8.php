@@ -28,7 +28,7 @@ class __TwigTemplate_7850924d65a868268f556fd49e88ffa4e403a903f9d1595981b38e774e7
     public function block_content($context, array $blocks = array())
     {
         // line 4
-        echo "   
+        echo "
     <table style=\"width:70%\" border=\"1\">
         <tr>
             <th>#</th>
@@ -68,10 +68,14 @@ class __TwigTemplate_7850924d65a868268f556fd49e88ffa4e403a903f9d1595981b38e774e7
             // line 19
             echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "sku", array()), "html", null, true);
             echo "</td>
-                <td>";
+                <td><a href=\"";
             // line 20
+            echo twig_escape_filter($this->env, (isset($context["path"]) ? $context["path"] : null), "html", null, true);
+            echo "/admin/products/view.php?id=";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "id", array()), "html", null, true);
+            echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "name", array()), "html", null, true);
-            echo "</td>
+            echo "</a></td>
                 <td>";
             // line 21
             echo twig_escape_filter($this->env, $this->getAttribute($context["p"], "description", array()), "html", null, true);
@@ -105,7 +109,7 @@ class __TwigTemplate_7850924d65a868268f556fd49e88ffa4e403a903f9d1595981b38e774e7
         // line 27
         echo "
     </table>
-       
+
 ";
     }
 
@@ -121,13 +125,13 @@ class __TwigTemplate_7850924d65a868268f556fd49e88ffa4e403a903f9d1595981b38e774e7
 
     public function getDebugInfo()
     {
-        return array (  106 => 27,  89 => 24,  85 => 23,  81 => 22,  77 => 21,  73 => 20,  69 => 19,  65 => 18,  62 => 17,  45 => 16,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  110 => 27,  93 => 24,  89 => 23,  85 => 22,  81 => 21,  73 => 20,  69 => 19,  65 => 18,  62 => 17,  45 => 16,  31 => 4,  28 => 3,  11 => 1,);
     }
 }
 /* {% extends "admin/layout.html.twig" %}*/
 /* */
 /* {% block content %}*/
-/*    */
+/* */
 /*     <table style="width:70%" border="1">*/
 /*         <tr>*/
 /*             <th>#</th>*/
@@ -143,7 +147,7 @@ class __TwigTemplate_7850924d65a868268f556fd49e88ffa4e403a903f9d1595981b38e774e7
 /*             <tr>*/
 /*                 <td>{{loop.index}}</td>*/
 /*                 <td> {{p.sku}}</td>*/
-/*                 <td>{{p.name}}</td>*/
+/*                 <td><a href="{{path}}/admin/products/view.php?id={{p.id}}">{{p.name}}</a></td>*/
 /*                 <td>{{p.description}}</td>*/
 /*                 <td>{{p.price}}</td>*/
 /*                 <td>{{p.quantity}}</td>*/
@@ -152,5 +156,5 @@ class __TwigTemplate_7850924d65a868268f556fd49e88ffa4e403a903f9d1595981b38e774e7
 /*         {% endfor %}*/
 /* */
 /*     </table>*/
-/*        */
+/* */
 /* {% endblock %}*/
